@@ -1,0 +1,38 @@
+{
+  "name": "dryrun-todo-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Build a minimal todo list web application with these features: add todo items with title, mark todos as complete, delete completed todos, filter by status. Use Next.js and TypeScript with PostgreSQL. Deploy to staging only.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:ci": "vitest run",
+    "db:push": "prisma db push",
+    "db:generate": "prisma generate",
+    "db:studio": "prisma studio",
+    "db:migrate": "prisma migrate dev"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "@prisma/client": "^5.15.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/react": "^18.3.0",
+    "@types/node": "^20.14.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
+    "prisma": "^5.15.0",
+    "vitest": "^1.6.0",
+    "@testing-library/react": "^15.0.0"
+  }
+}
